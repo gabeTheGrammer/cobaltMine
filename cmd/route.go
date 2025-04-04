@@ -14,6 +14,9 @@ func (app *application) route() http.Handler {
 	// Basic test to see if all flows correctly
 	mux.Get("/test", http.HandlerFunc(app.test))
 
+	// Set the root to be home
+	mux.Get("/", http.HandlerFunc(app.home))
+
 	// Includes all the static files that will be used and makes them accsesable(CSS, JS, Images)
 	fileServe := http.FileServer(http.Dir("./userEnd/static/"))
 

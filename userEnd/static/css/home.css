@@ -1,0 +1,35 @@
+.body {
+  background: #343a40;
+  color: white;
+}
+
+.carousel {
+  height: 30vh;
+}
+
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-indicators button {
+  background-color: black;
+}
+
+.carousel-indicators .active {
+  background-color: gray;
+}
+
+.container {
+  margin-top: 2vh;
+}

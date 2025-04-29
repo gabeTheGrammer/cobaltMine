@@ -1,0 +1,11 @@
+.body {
+  background: #343a40;
+  color: white;
+}
+
+.container-fluid{
+  margin-top: 2vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+

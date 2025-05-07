@@ -30,6 +30,23 @@ cd project-name
 go mod tidy
 (If the dependinces still don't install use 'go get required_depenincy' i.e. 'go get filippo.io/edwards25519')
 
+# Go to secret folder or create it
+cd secret
+or
+mkdir secret
+
+# Add a data.env using a editor (Or any prefrences of file editor)
+vim data.env
+
+# In this file add the following as well as your own information
+
+DB_USERNAME=YOUR_DB_USERNAME
+DB_PASSWORD=YOUR_DB_PASSWORD
+DB_IP=YOUR_IP_ADDRESS
+DB_NAME=YOUR_DB_NAME
+
+(Don't include spaces)
+
 # Run the server
 go run cmd/*
 

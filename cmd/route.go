@@ -20,6 +20,14 @@ func (app *application) route() http.Handler {
 	// Routing for the api calls that the JS will use
 	mux.Post("/userChoice/api", http.HandlerFunc(app.getTables))
 
+  mux.Get("/commodityFilter", http.HandlerFunc(app.commodityFilter))
+
+  mux.Post("/commodityFilter/api", http.HandlerFunc(app.commodityGet))
+
+  mux.Get("/resourceIndicator", http.HandlerFunc(app.resourceInd))
+
+  mux.Get("/resourceIndicator/api", http.HandlerFunc(app.resourceGet))
+
 	// Includes all the static files that will be used and makes them accsesable(CSS, JS, Images)
 	fileServe := http.FileServer(http.Dir("./userEnd/static/"))
 

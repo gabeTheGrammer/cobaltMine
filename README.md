@@ -7,7 +7,7 @@
 - Retrive tables of specified request
 - Display mines information when given a feature type and the material wanted
 - Displays a list of resoures that have a contained estimate and display information about them
-- Using filippo.io/edwards25519 v1.1.0, github.com/bmizerany/pat v0.0.0-20210406213842-e4b6760bdd6f, github.com/go-sql-driver/mysql v1.9.2, github.com/joho/godotenv v1.5.1
+- Using github.com/bmizerany/pat v0.0.0-20210406213842-e4b6760bdd6f, github.com/go-sql-driver/mysql v1.9.2, github.com/joho/godotenv v1.5.1
 
 ## 🚀 Getting Started
 
@@ -28,7 +28,7 @@ cd project-name
 
 # Run the tidy command
 go mod tidy
-(If the dependinces still don't install use 'go get required_depenincy' i.e. 'go get filippo.io/edwards25519')
+(If the dependinces still don't install use 'go get required_depenincy' i.e. 'go get github.com/bmizerany/pat')
 
 # Go to secret folder or create it
 cd secret
